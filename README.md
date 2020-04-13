@@ -1,6 +1,6 @@
 # InstaPhisher - 2020
 
-__author__ ExilasP <br/>
+__author__ Exilas <br/>
 __version__ 1.0.0
 
 
