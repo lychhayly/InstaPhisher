@@ -23,7 +23,7 @@ Exemple:
 
 You can also obtain SSL certificates with Let's Encrypt to benefit from an https connection. In this case you will have to redirect ports 80 and 443 (UDP/TCP) of your router to your machine.
 
-The InstaPhisher file is used to notify you when a new password is captured. It is therefore not necessary to open it.
+The InstaPhisher file is only used to notify you when a new password is captured. It is therefore not necessary to open it, but recommended.
 
 
 # Install
