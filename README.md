@@ -38,7 +38,7 @@ python InstaPhisher.py
 ```
 
 
-# NOTICE
+# Notice
 
 ### Requirements
 
