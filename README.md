@@ -58,7 +58,7 @@ Windows:
 listner.py
 ```
 
-When your target has entered his password, you will receive a message like the one below.
+When your target has entered his password, you will receive a message and a sound notification :
 ```
 [+] New password hacked - <UserTarget>
 ```
