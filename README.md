@@ -18,7 +18,6 @@ Then, move all InstaPhisher files to the apache folder ('/var/www/html' for linu
 You can modify the redirect link in the login.php file. Enter url in header() function, after 'Location: ' at line 19. The default redirection is https://www.instagram.com.
 
 Exemple:
---------
 -   header("Location: https://www.instagram.com");
 -   header("Location: <redirection_url>");
 
