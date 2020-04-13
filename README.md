@@ -49,7 +49,7 @@ python InstaPhisher.py
 -   Php    : https://www.php.net/downloads
 -   Mysql  : https://www.mysql.com/
 -   DNS    : https://www.freenom.com/
--   Linux or windows (simpler with linux)
+-   Linux, Windows, MacOS (simpler with linux)
 
 ### Usage
 
