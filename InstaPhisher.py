@@ -1,4 +1,24 @@
-import time, os
+# ----------------------#
+# __Author__  Exilas    #
+# __Version__ 1.0.0     #
+# ----------------------#
+import time
+
+def menu():
+	print(" _____          _       ______ _     _     _\n"
+		  "|_   _|        | |      | ___ \ |   (_)   | |              \n"
+		  "  | | _ __  ___| |_ __ _| |_/ / |__  _ ___| |__   ___ _ __ \n"
+		  "  | || '_ \/ __| __/ _` |  __/| '_ \| / __| '_ \ / _ \ '__|\n"
+		  " _| || | | \__ \ || (_| | |   | | | | \__ \ | | |  __/ |\n"
+		  " \___/_| |_|___/\__\__,_\_|   |_| |_|_|___/_| |_|\___|_|\n")
+	print('----------------------------------------------------------')
+	print('[i] Make sure you have disabled your firewall')
+	print('[i] Make sure you have make port forwarding')
+	print('[i] Make sure you have configured your DNS')
+	print('[i] Make sure you have started apache')
+	print('\nExilas // InstaPhisher // Version 1.0.0')
+	print('----------------------------------------------------------')
+
 
 def exist(file):
 	try:
@@ -17,6 +37,7 @@ def beep():
 
 def main():
 
+	menu()
 	print('\nListner start ...\n')
 	nbLine = 0
 
@@ -29,7 +50,6 @@ def main():
 
 	for line in lines:
 		nbLine += 1
-
 
 	while 1:
 
