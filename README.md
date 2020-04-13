@@ -60,7 +60,7 @@ service apache2 start
 python InstaPhisher.py  #Not required but recommended
 ```
 
-When your target has entered his password, you will receive a message and a sound notification :
+When your target has entered his password, you will receive a message and a sound notification:
 ```
 [+] New password hacked - <UserTarget>
 ```
