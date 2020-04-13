@@ -1,7 +1,7 @@
 # InstaPhisher - 2020
 
-[![author](ExilasP)]()
-[![version](1.0.0)]()
+__author__ ExilasP
+__version__ 1.0.0
 
 
 # Disclamer
