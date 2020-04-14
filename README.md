@@ -48,7 +48,6 @@ python InstaPhisher.py
 -   Python : https://www.python.org/downloads/
 -   Apache : https://httpd.apache.org/download.cgi
 -   Php    : https://www.php.net/downloads
--   Mysql  : https://www.mysql.com/
 -   DNS    : https://www.freenom.com/
 -   Linux, Windows or MacOS (simpler with linux)
 
