@@ -142,9 +142,3 @@ With admin cmd
 cd C:\Apache24\bin
 httpd -k start          #"httpd -k stop" for stop
 ```
-
-
-When your target has entered his password, you will receive a message and a sound notification:
-```
-[+] New password hacked - <UserTarget>
-```
