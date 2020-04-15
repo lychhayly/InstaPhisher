@@ -130,21 +130,21 @@ move /Y %userprofile%\Download\InstaPhisher\* C:\Apache24\htdocs
 
 ### Usage
 
-Linux:
+- Linux:
 ```
 service apache2 start   #"service apache2 stop" for stop 
 python InstaPhisher.py  #Not required but recommended
 ```
+- Windows:
+
+With admin cmd
+```
+cd C:\Apache24\bin
+httpd -k start          #"httpd -k stop" for stop
+```
+
 
 When your target has entered his password, you will receive a message and a sound notification:
 ```
 [+] New password hacked - <UserTarget>
-```
-
-Windows:
-
-With admin cmd:
-```
-cd C:\Apache24\bin
-httpd -k start          #"httpd -k stop" for stop
 ```
