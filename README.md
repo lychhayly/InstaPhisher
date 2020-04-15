@@ -102,7 +102,7 @@ rename C:\php\php.ini-development C:\php\php.ini
 ```
 
 11. Open C:/Apache24/httpd.conf
--	Add the Following Lines:
+- Add the following lines at the end:
 ```
 PHPIniDir "C:/php"
 LoadModule php7_module "C:/php/php7apache2_4.dll"
