@@ -75,30 +75,34 @@ move /Y %userprofile%\Download\httpd-2.4.43-win64-VS16\Apache24 C:\Apache24
 -	Open C:/Apache24/httpd.conf with notepad
 -	line 162: replace "#LoadModule rewrite_module modules/mod_rewrite.so" to "LoadModule rewrite_module modules/mod_rewrite.so"
 -	Open CMD in Administrator Mode
--	Use the Command "cd /Apache24/bin"
--	Use the Command "httpd -k install"
 
-6. Download php Thread Safe
+6. Install Apache
+```
+cd /Apache24/bin
+httpd -k install
+```
+
+7. Download php Thread Safe
 ```
 Powershell.exe Invoke-WebRequest -Uri "https://windows.php.net/downloads/qa/php-7.4.5RC1-Win32-vc15-x64.zip" -OutFile "%userprofile%\Download\php-7.4.5RC1-Win32-vc15-x64.zip"
 ```
 
-7. Extract archive
+8. Extract archive
 ```
 Powershell.exe Compress-Archive -Path "%userprofile%\Download\php-7.4.5RC1-Win32-vc15-x64.zip" -DestinationPath "%userprofile%\Download\php"
 ```
 
-8. Move all file in php-7.4.5RC1-Win32-vc15-x64 folder to C:\php
+9. Move all file in php-7.4.5RC1-Win32-vc15-x64 folder to C:\php
 ```
 move /Y %userprofile%\Download\php C:\
 ```
 
-9. Rename C:/php/php.ini-development to C:/php/php.ini
+10. Rename C:/php/php.ini-development to C:/php/php.ini
 ```
 rename C:\php\php.ini-development C:\php\php.ini
 ```
 
-10. Open C:/Apache24/httpd.conf
+11. Open C:/Apache24/httpd.conf
 -	Add the Following Lines:
 ```
 PHPIniDir "C:/php"
