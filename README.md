@@ -74,9 +74,8 @@ move /Y %userprofile%\Download\httpd-2.4.43-win64-VS16\Apache24 C:\Apache24
 5. You must modify Apache24\conf\httpd.conf
 -	Open C:/Apache24/httpd.conf with notepad
 -	line 162: replace "#LoadModule rewrite_module modules/mod_rewrite.so" to "LoadModule rewrite_module modules/mod_rewrite.so"
--	Open CMD in Administrator Mode
 
-6. Install Apache
+6. Install Apache, CMD in admin mode
 ```
 cd /Apache24/bin
 httpd -k install
