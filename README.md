@@ -47,7 +47,7 @@ Windwos
 
 ## Apache and Php download and configuration
 
-[tutorial](https://www.youtube.com/watch?v=vb0vQYoeWt0 "Video tutorial")<br/>
+[Video tutorial](https://www.youtube.com/watch?v=vb0vQYoeWt0 "Video tutorial")<br/>
 
 1. Download apache-2.4
 ```
