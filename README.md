@@ -26,7 +26,8 @@ You can also obtain SSL certificates with Let's Encrypt to benefit from an https
 The InstaPhisher file is only used to notify you when a new password is captured. It is therefore not necessary to open it, but recommended.
 
 
-# Install
+Install
+=======
 
 Linux
 -----
@@ -45,7 +46,7 @@ python InstaPhisher.py
 Windwos
 -------
 
-## Apache and Php download and configuration
+### Apache and Php download and configuration
 
 [Video tutorial](https://www.youtube.com/watch?v=vb0vQYoeWt0 "Video tutorial")<br/>
 
@@ -109,7 +110,7 @@ LoadModule php7_module "C:/php/php7apache2_4.dll"
 AddHandler application/x-httpd-php .php
 ```
 
-## InstaPhisher download
+### InstaPhisher download
 
 1. Download InstaPhisher, extract and move to apache server folder (apache24\htdocs). PowerShell in administrator.
 ```
@@ -118,9 +119,11 @@ Powershell.exe Expand-Archive -Path "%userprofile%\Downloads\InstaPhisher.zip" -
 Powershell.exe Move-Item -Path "%userprofile%\Downloads\InstaPhisher\InstaPhisher-master\*" -Destination "C:\Apache24\htdocs\"
 ```
 
-# Notice
+Notice
+======
 
-### Requirements
+Requirements
+------------
 
 -   Python : https://www.python.org/downloads/
 -   Apache : https://httpd.apache.org/download.cgi
@@ -128,14 +131,17 @@ Powershell.exe Move-Item -Path "%userprofile%\Downloads\InstaPhisher\InstaPhishe
 -   DNS    : https://www.freenom.com/
 -   Linux, Windows or MacOS (simpler with linux)
 
-### Usage
+Usage
+-----
 
-- Linux:
+### Linux:
+
 ```
 service apache2 start   #"service apache2 stop" for stop 
 python InstaPhisher.py  #Not required but recommended
 ```
-- Windows:
+
+###Windows:
 
 With admin cmd
 ```
