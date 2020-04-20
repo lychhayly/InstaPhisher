@@ -89,14 +89,14 @@ Powershell.exe Invoke-WebRequest -Uri "https://windows.php.net/downloads/qa/php-
 Powershell.exe Expand-Archive -Path "%userprofile%\Downloads\php-7.4.5RC1-Win32-vc15-x64.zip" -DestinationPath "%userprofile%\Downloads\php"
 ```
 
-9. Move all file in php-7.4.5RC1-Win32-vc15-x64 folder to C:\php. PowerShell in administrator.
+9. Rename php.ini-development to php.ini. PowerShell in administrator.
 ```
-move /Y %userprofile%\Downloads\php C:\
+Rename-Item -Path "%userprofile%\Downloads\php\php.ini-development" -NewName "%userprofile%\Downloads\php\php.ini-development"
 ```
 
-10. Rename C:/php/php.ini-development to C:/php/php.ini. PowerShell in administrator.
+10. Move all file in php-7.4.5RC1-Win32-vc15-x64 folder to C:\php. PowerShell in administrator.
 ```
-rename C:\php\php.ini-development C:\php\php.ini
+Powershell.exe Move-Item -Path "%userprofile%\Downloads\php" -Destination "C:\"
 ```
 
 11. Open C:/Apache24/httpd.conf
