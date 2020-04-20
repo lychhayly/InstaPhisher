@@ -75,7 +75,7 @@ move /Y %userprofile%\Downloads\httpd-2.4.43-win64-VS16\Apache24 C:\Apache24
 -	Open C:/Apache24/httpd.conf with notepad
 -	line 162: replace "#LoadModule rewrite_module modules/mod_rewrite.so" to "LoadModule rewrite_module modules/mod_rewrite.so"
 
-6. Install Apache, CMD in administrator mode.
+6. Install Apache
 ```
 cd /Apache24/bin
 httpd -k install
@@ -93,7 +93,7 @@ Powershell.exe Expand-Archive -Path "%userprofile%\Downloads\php-7.4.5RC1-Win32-
 
 9. Rename php.ini-development to php.ini.
 ```
-Rename-Item -Path "%userprofile%\Downloads\php\php.ini-development" -NewName "%userprofile%\Downloads\php\php.ini-development"
+Powershell.exe Rename-Item -Path "%userprofile%\Downloads\php\php.ini-development" -NewName "%userprofile%\Downloads\php\php.ini-development"
 ```
 
 10. Move all file in php-7.4.5RC1-Win32-vc15-x64 folder to C:\php.
