@@ -60,7 +60,14 @@ def main():
 
 	while 1:
 
-		time.sleep(1)
+		try:
+			time.sleep(1)
+		except KeyboardInterrupt:
+			print('\n[i] InstaPhisher stoped')
+			sys.exit()
+		else:
+			pass
+		
 		nbLine2 = 0
 
 		with open('serverMsg.txt', 'r') as serverMsg:
