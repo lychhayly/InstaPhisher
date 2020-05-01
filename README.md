@@ -101,7 +101,7 @@ Powershell.exe Rename-Item -Path "%userprofile%\Downloads\php\php.ini-developmen
 Powershell.exe Move-Item -Path "%userprofile%\Downloads\php" -Destination "C:\"
 ```
 
-11. Open C:/Apache24/httpd.conf
+11. Open C:/Apache24/conf/httpd.conf
 - Add the following lines at the end:
 ```
 PHPIniDir "C:/php"
