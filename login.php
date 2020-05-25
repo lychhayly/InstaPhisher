@@ -1,6 +1,6 @@
 <?php
 
-	if ($_POST['username'] <= 0 and $_POST['password'] < 6){
+	if ($_POST['username'] <= 0 or $_POST['password'] < 6){
 		header("Location: index.php");
 	}
 
