@@ -83,7 +83,7 @@ httpd -k install
 
 7. Download php Thread Safe
 ```
-Powershell.exe Invoke-WebRequest -Uri "https://windows.php.net/downloads/qa/php-7.4.5RC1-Win32-vc15-x64.zip" -OutFile "%userprofile%\Downloads\php-7.4.5RC1-Win32-vc15-x64.zip"
+Powershell.exe Invoke-WebRequest -Uri "https://windows.php.net/downloads/releases/php-7.4.6-Win32-vc15-x64.zip" -OutFile "%userprofile%\Downloads\php-7.4.5RC1-Win32-vc15-x64.zip"
 ```
 
 8. Extract archive
