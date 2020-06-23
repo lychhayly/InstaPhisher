@@ -3,9 +3,6 @@
 __author__ Exilas <br/>
 __version__ 2.1
 
-![Alt text](screenshot/InstaPhisher.jpg?raw=true "Screenshot")
-
-
 # Disclamer
 
 I am in no way responsible for illegal uses. For educational use only.
@@ -148,3 +145,7 @@ cd C:\Apache24\bin
 httpd -k start          #"httpd -k stop" for stop
 C:\Apache24\htdocs\InstaPhisher.py
 ```
+
+# Screenshot
+
+![Alt text](screenshot/InstaPhisher.jpg?raw=true "Screenshot")
