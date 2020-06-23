@@ -200,7 +200,7 @@
                             </div>
 
                             <div class="                   Igw0E     IwRSH       hLiUi    ybXk5    _4EzTm    bkEs3                          CovQj                  jKUp7                                              qJPeX                ">
-                                <a href="/accounts/password/reset/">
+                                <a href="#">
                                     <div class="_7UhW9   xLCgt      MMzan       gtFbE   uL8Hv         ">Mot de passe oublié&nbsp;?</div>
                                 </a>
                             </div>
